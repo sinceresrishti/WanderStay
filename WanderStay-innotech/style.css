@@ -1,0 +1,109 @@
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container-body {
+    height: 100vh;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+/* General styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+}
+/* Body styles */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Navbar styling */
+.navbar {
+    background-color: rgb(72, 202, 225);
+    border-bottom: 1px solid #ddd;
+}
+
+.navbar-nav .nav-link {
+    font-size: 1.1rem;
+    color: #333;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #007bff;
+}
+
+.navbar-nav .nav-link.active {
+    font-weight: bold;
+    color: #007bff;
+}
+
+.navbar-nav .btn {
+    font-size: 1rem;
+    padding: 8px 20px;
+}
+
+.navbar-nav .nav-item + .nav-item {
+    margin-left: 10px;
+}
+
+
+/* Search and filter styles */
+input.form-control, select.form-select {
+    max-width: 300px;
+}
+
+/* Modal Styles */
+.modal-content {
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.property-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 400px;
+}
+
+.property-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.property-card img {
+    border-radius: 8px 8px 0 0;
+    height: 200px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.property-card .card-body {
+    padding: 15px;
+}
+
+.property-card h5 {
+    color: #333;
+}
+
+.property-card .price {
+    color: #e67e22;
+    font-weight: bold;
+}
+
+
+footer {
+    background-color: #696565;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
