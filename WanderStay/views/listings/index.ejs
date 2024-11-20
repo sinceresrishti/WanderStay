@@ -1,0 +1,38 @@
+<% layout("/layouts/boilerplate") %>
+<body>
+  <!-- <h3>All Listings</h3> -->
+
+  <div class="row row-cols-lg-3 row-cols-md-2 row-cols-sm-1 row-cols-xs-1 mt-3">
+    <% for (let listing of allListings) { %>
+    <a href="/listings/<%= listing._id %>" class="listing-link">
+      <div class="card col">
+        <% if (listing.image && listing.image.url) { %>
+        <img
+          src="<%= listing.image.url %>"
+          class="card-img-top"
+          alt="listing-image"
+          style="height: 20rem"
+        />
+        <% } else { %>
+        <img
+          src="/images/default.jpg"
+          class="card-img-top"
+          alt="default-image"
+          style="height: 20rem"
+        />
+        <% } %>
+
+        <div class="card-img-overlay"></div>
+        <div class="card-body">
+          <p class="card-text">
+            <b><%= listing.title || "Untitled Listing" %></b> <br />
+            &#8377; <% if (listing.price) { %> <%=
+            listing.price.toLocaleString("en-IN") %> / night <% } else { %>
+            Price not available <% } %>
+          </p>
+        </div>
+      </div>
+    </a>
+    <% } %>
+  </div>
+</body>
